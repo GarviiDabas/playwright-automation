@@ -1,25 +1,19 @@
 from faker import Faker
-from config import BASE_URL
+from constants import (
+    BASE_URL,
+    EVENT_ID,
+    EVENT_NAME,
+    EVENT_PRICE,
+    EVENT_DATE_SHORT,
+    EVENT_DATE_LONG,
+    EVENT_TIME,
+    EVENT_LOCATION,
+    EVENT_CITY,
+    EVENT_URL,
+    EVENTS_URL,
+)
 
 fake = Faker()
-
-# ============================================================
-# CENTRALIZED EVENT CONSTANTS
-# ============================================================
-
-EVENT_ID = 285
-EVENT_NAME = "Dilli Diwali Mela"
-EVENT_PRICE = 300
-
-EVENT_DATE_SHORT = "Tue, 20 Oct"
-EVENT_DATE_LONG = "Tuesday, 20 October"
-EVENT_TIME = "10:30 pm"
-
-EVENT_LOCATION = "Pragati Maidan Exhibition Grounds"
-EVENT_CITY = "Delhi"
-
-EVENT_URL = f"{BASE_URL}/events/{EVENT_ID}"
-EVENTS_URL = f"{BASE_URL}/events"
 
 
 # ============================================================

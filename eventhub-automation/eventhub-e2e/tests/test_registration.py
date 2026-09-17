@@ -1,6 +1,7 @@
 import pytest
 from playwright.sync_api import Page, expect
-from config import BASE_URL, TEST_PASSWORD, EXISTING_EMAIL
+from constants import BASE_URL
+from config import TEST_PASSWORD, EXISTING_EMAIL
 from pages.registration_page import RegistrationPage
 from utils.test_data import generate_unique_email
 

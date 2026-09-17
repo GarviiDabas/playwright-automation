@@ -1,10 +1,7 @@
 import pytest
 from playwright.sync_api import Page, expect
-from config import BASE_URL
+from constants import BASE_URL, LOGIN_URL, BOOKINGS_URL as PROTECTED_URL
 from pages.home_page import HomePage
-
-LOGIN_URL = f"{BASE_URL}/login"
-PROTECTED_URL = f"{BASE_URL}/bookings"
 
 def test_logout_redirects_to_login(logged_in_page: Page):
     page = logged_in_page

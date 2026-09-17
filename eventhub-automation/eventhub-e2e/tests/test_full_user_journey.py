@@ -1,7 +1,8 @@
 import re
 import pytest
 from playwright.sync_api import Page, expect
-from config import BASE_URL, TEST_PASSWORD
+from constants import BASE_URL, EVENT_NAME, EVENT_LOCATION, EVENT_PRICE
+from config import TEST_PASSWORD
 from pages.registration_page import RegistrationPage
 from pages.login_page import LoginPage
 from pages.home_page import HomePage
@@ -12,9 +13,6 @@ from pages.bookings_page import BookingsPage
 from utils.test_data import (
     generate_unique_email,
     generate_booking_info,
-    EVENT_NAME,
-    EVENT_LOCATION,
-    EVENT_PRICE,
 )
 
 def test_full_end_to_end_user_journey(page: Page):

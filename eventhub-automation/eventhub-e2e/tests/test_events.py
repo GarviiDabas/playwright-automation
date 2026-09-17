@@ -1,9 +1,7 @@
 import pytest
 from playwright.sync_api import Page, expect
-from config import BASE_URL
-from pages.events_page import EventsPage
-from pages.event_details_page import EventDetailsPage
-from utils.test_data import (
+from constants import (
+    BASE_URL,
     EVENT_ID,
     EVENT_NAME,
     EVENT_PRICE,
@@ -15,6 +13,8 @@ from utils.test_data import (
     EVENT_URL,
     EVENTS_URL,
 )
+from pages.events_page import EventsPage
+from pages.event_details_page import EventDetailsPage
 
 def test_events_are_displayed(logged_in_page: Page):
     page = logged_in_page

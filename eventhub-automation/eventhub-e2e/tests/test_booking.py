@@ -1,11 +1,12 @@
 import re
 import pytest
 from playwright.sync_api import Page, expect
-from config import BASE_URL, TEST_EMAIL
+from constants import BASE_URL, EVENT_NAME, EVENT_PRICE, EVENT_URL
+from config import TEST_EMAIL
 from pages.event_details_page import EventDetailsPage
 from pages.booking_page import BookingPage
 from pages.bookings_page import BookingsPage
-from utils.test_data import EVENT_NAME, EVENT_PRICE, EVENT_URL, generate_booking_info
+from utils.test_data import generate_booking_info
 
 def test_book_available_event(logged_in_page: Page):
     page = logged_in_page

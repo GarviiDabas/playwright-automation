@@ -2,7 +2,7 @@ import json
 import os
 from utils.encryption import decrypt_password
 
-BASE_URL = "https://eventhub.rahulshettyacademy.com"
+from constants import BASE_URL
 
 PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 CREDENTIALS_FILE = os.path.join(PROJECT_ROOT, "test_data", "credentials.json")

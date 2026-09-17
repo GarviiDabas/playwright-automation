@@ -1,6 +1,6 @@
 from playwright.sync_api import Page, expect
 from pages.base_page import BasePage
-from config import BASE_URL
+from constants import BASE_URL
 from utils.logger import get_logger
 
 logger = get_logger("HomePage")

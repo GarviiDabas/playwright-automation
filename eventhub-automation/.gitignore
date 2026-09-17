@@ -1,0 +1,23 @@
+# Environment & Credentials
+.env
+secret.key
+credentials.json
+**/credentials.json
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Test Artifacts, Logs, and Reports
+test-results/
+artifacts/
+**/logs/
+*.log
+**/reports/
+*.html
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store

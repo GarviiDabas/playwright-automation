@@ -1,6 +1,7 @@
 from playwright.sync_api import Page, expect
 from pages.base_page import BasePage
-from config import BASE_URL, TEST_PASSWORD
+from constants import REGISTRATION_URL
+from config import TEST_PASSWORD
 from utils.test_data import generate_unique_email
 from utils.logger import get_logger
 
@@ -17,7 +18,7 @@ class RegistrationPage(BasePage):
 
     def navigate(self):
         logger.info("Navigating to registration page")
-        self.page.goto(f"{BASE_URL}/register")
+        self.page.goto(REGISTRATION_URL)
         return self
 
     def fill_registration_form(

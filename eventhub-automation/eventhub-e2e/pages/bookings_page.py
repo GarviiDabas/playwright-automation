@@ -1,14 +1,14 @@
 import re
 from playwright.sync_api import Page, expect
 from pages.base_page import BasePage
-from config import BASE_URL
+from constants import BOOKINGS_URL
 
 class BookingsPage(BasePage):
     def __init__(self, page: Page):
         super().__init__(page)
 
     def navigate(self):
-        self.page.goto(f"{BASE_URL}/bookings")
+        self.page.goto(BOOKINGS_URL)
         return self
 
     def verify_bookings_page_loaded(self):

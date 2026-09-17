@@ -1,6 +1,6 @@
 from playwright.sync_api import Page, expect
 from pages.base_page import BasePage
-from config import BASE_URL
+from constants import LOGIN_URL
 from utils.logger import get_logger
 
 logger = get_logger("LoginPage")
@@ -15,7 +15,7 @@ class LoginPage(BasePage):
 
     def navigate(self):
         logger.info("Navigating to login page")
-        self.page.goto(f"{BASE_URL}/login")
+        self.page.goto(LOGIN_URL)
         return self
 
     def login(self, email: str, password: str):

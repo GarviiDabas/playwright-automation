@@ -1,7 +1,7 @@
 import re
 from playwright.sync_api import Page, expect
 from pages.base_page import BasePage
-from config import BASE_URL
+from constants import EVENTS_URL
 
 class EventsPage(BasePage):
     def __init__(self, page: Page):
@@ -10,7 +10,7 @@ class EventsPage(BasePage):
         self.search_input = page.get_by_placeholder("Search events, venues…")
 
     def navigate(self):
-        self.page.goto(f"{BASE_URL}/events")
+        self.page.goto(EVENTS_URL)
         return self
 
     def verify_events_page_loaded(self):

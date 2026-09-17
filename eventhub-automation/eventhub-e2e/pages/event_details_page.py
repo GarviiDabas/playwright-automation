@@ -1,8 +1,8 @@
 import re
 from playwright.sync_api import Page, expect
 from pages.base_page import BasePage
-from config import BASE_URL, TEST_EMAIL
-from utils.test_data import EVENT_NAME, EVENT_URL
+from config import TEST_EMAIL
+from constants import EVENT_NAME, EVENT_URL
 from utils.logger import get_logger
 
 logger = get_logger("EventDetailsPage")

@@ -18,7 +18,7 @@ An end-to-end web test automation framework built using **Python**, **Playwright
 
 ```
 eventhub-end-to-end-testing/
-├── secret.key                        # Secret Fernet key for decrypting passwords (git-ignored)
+├── constants.py                       # Centralized application & route constants
 ├── config.py                         # Centralized config loader & password decryptor
 ├── conftest.py                       # Global Pytest fixtures (e.g. authenticated page)
 ├── pytest.ini                        # Pytest settings and CLI defaults

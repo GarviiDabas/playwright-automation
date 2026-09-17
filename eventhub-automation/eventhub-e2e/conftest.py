@@ -1,6 +1,7 @@
 import pytest
 from playwright.sync_api import Page, expect
-from config import BASE_URL, TEST_EMAIL, TEST_PASSWORD
+from constants import BASE_URL
+from config import TEST_EMAIL, TEST_PASSWORD
 from pages.login_page import LoginPage
 from utils.logger import get_logger
 
