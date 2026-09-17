@@ -1,0 +1,14 @@
+{
+  "invalid_users": [
+    {
+      "email": "wrongemail@gmail.com",
+      "password": "WrongPassword123",
+      "description": "Unregistered user credentials"
+    },
+    {
+      "email": "invalid-email-format",
+      "password": "Password1!",
+      "description": "Invalid email syntax"
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+2026-09-16 22:51:31 [INFO] Conftest: >>> STARTING TEST: test_events_are_displayed[chromium]
+2026-09-16 22:51:32 [INFO] Conftest: Setting up logged_in_page fixture for user: testuser@gmail.com
+2026-09-16 22:51:32 [INFO] LoginPage: Navigating to login page
+2026-09-16 22:51:32 [INFO] LoginPage: Attempting login for user: testuser@gmail.com
+2026-09-16 22:51:33 [INFO] Conftest: <<< PASSED TEST: test_events_are_displayed[chromium]
